@@ -1,0 +1,32 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Mini Cart Feature</title>  
+</head>  
+<body>  
+
+<h1>Exzora Shopping</h1>  
+
+<script>  
+
+    const price =[19.99, 9.99, 4.99];
+    const total = price.reduce((sum,price) => sum+price ,0);
+    const threshold = 30;
+
+    const eligibilty = total > threshold;
+
+    const shipping = eligibilty ? 0 : 5.99;
+
+    const finaltotal = shipping + total;
+
+    document.body.innerHTML += `<p>Eligibility for free: ${eligibilty}</p>`;
+    document.body.innerHTML += `<p>Shipping: $${shipping}</p>`;
+    document.body.innerHTML += `<p>Final Total: $${finaltotal}</p>`;
+
+    
+</script>  
+
+</body>  
+</html>  

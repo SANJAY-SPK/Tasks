@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); 
+
+body {
+    font-family: 'roboto', sans-serif;
+    background-color: #ecf0f1;
+    color: #333333;
+}
+
+header {  
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #3498db; 
+    color: white;  
+    padding: 20px;  
+}  
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navigation{
+    display: flex;
+    gap: 15px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 5%;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.product-card {
+    background-color: white; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    padding: 20px; 
+    margin: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+
+
+
+}
+
+footer {  
+    background-color: #52a0ed; 
+    color: white;  
+    text-align: center;  
+    padding: 10px 0;  
+    position: relative;  
+    bottom: 0;  
+    width: 100%;  
+}  
+
+@media (max-width: 600px) {  
+    header {  
+        flex-direction: column; 
+        align-items: flex-start;  
+    }  
+    
+    .navigation {  
+        flex-direction: column; 
+        width: 100%;  
+        margin-top: 10px; 
+        gap: 5px; 
+    }  
+    
+    .navigation a {  
+        width: 100%;  
+        text-align: left;
+        padding: 10px; 
+        background-color: #2980b9; 
+    }  
+}  

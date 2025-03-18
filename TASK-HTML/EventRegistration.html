@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+</head>
+<body>
+    <h1>Event Registration</h1>
+    <form>
+        <label for = "name">Name</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for = "email">Email</label>
+        <input type = "email" id="email" name="email" required><br>
+        <label for = "phone">Phone</label>
+        <input type = "tel" id="phone" name="phone" required><br>
+        <label for ="college">College</label>
+        <input type ="text" id="college" name ="college" required><br><br>
+        
+        <label for ="event">Events on tomorrow</label>
+        <select name = "event" id = "event">
+            <option value="Dance">Dance</option>
+            <option value="Singing">Singing</option>
+            <option value="Mime">Mime</option>
+
+        </select><br>
+
+
+        <label for ="time">Choose the time</label>
+        <select name = "time" id ="time">
+            <option value="Morning">Morning</option>
+            <option value="Afternoon">Afternoon</option>
+            <option value="Evening">Evening</option>
+
+        </select><br><br>
+
+        <label for="check">*Terms and conditions apply</label>
+        <input type="checkbox" id="check" name="check" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    
+</body>
+</html>

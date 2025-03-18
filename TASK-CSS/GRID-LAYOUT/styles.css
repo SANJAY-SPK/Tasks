@@ -1,0 +1,36 @@
+.blog-posts{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+
+}
+
+header {  
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #3498db; 
+    color: white;  
+    padding: 20px;  
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navigation{
+    display: flex;
+    gap: 15px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {  
+    .blog-posts {  
+        grid-template-columns: 1fr; 
+    }  
+}  

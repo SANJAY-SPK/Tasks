@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PromoBanner</title>
+    <style>
+        #promo{
+            padding: 20px;  
+            background-color: #f0c14b;  
+            color: #333;  
+            text-align: center;  
+            font-size: 1.5em;  
+            border: 1px solid #a88734;  
+            border-radius: 5px;  
+            margin: 20px auto;  
+        }
+    </style>
+</head>
+<body>
+
+    <div id = promo>Welcome to Exzora LifeStyle</div>
+
+    <script>
+        const banner = document.getElementById("promo");
+
+        const promomessage = "Welcome to Exzora LifeStyle to make your design aesthetic";
+        const discountamnt = 20;
+        const userloggedin = true;
+
+        if(userloggedin)
+        {
+            banner.textContent = `${promomessage} you have got ${discountamnt}% as discount`;
+        }
+        else
+        {
+            banner.textContent = "Welcome!! Please log in to access the discounts!!"
+        }
+
+        console.log(`Promomessage: ${promomessage}, type: ${typeof promomessage}`);
+        console.log(`Discount%: ${discountamnt}, type: ${typeof discountamnt}`);
+        console.log(`UserLogIn: ${userloggedin}, type: ${typeof userloggedin}`);
+
+
+    </script>
+    
+</body>
+</html>

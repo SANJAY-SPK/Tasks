@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .button{
+            background-color: #4CAF50;
+            border: none;
+        }
+    </style>
+    <title>Type conversion and if-else statement</title>
+</head>
+<body>
+
+    <h1>Enter Your age</h1>
+    <label for="age">age is</label>
+    <input type="text" class="text" id="age">
+    <button id="button">Verify</button>
+    <div id="result"> result</div>
+
+
+    <script>
+
+        const button = document.getElementById("button");
+        const resultdiv = document.getElementById("result")
+
+
+        
+        
+        button.addEventListener("click", function(){
+            const value = document.getElementById("age").value;
+            const age = Number(value);
+            if (isNaN(age) || age<=0) 
+            {
+                alert("Please enter a valid number");
+                return;
+            }
+
+            let message;
+            if (age < 18) 
+            {
+                message = "Access:Minor";
+            }
+            else
+            {
+                message ="Access:Adult";
+
+            }
+            resultdiv.textContent=message;
+        });
+
+        
+
+
+    </script>
+    
+</body>
+</html>

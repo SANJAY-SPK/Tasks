@@ -1,0 +1,40 @@
+h1 {  
+    font-size: 2.5em;  
+    margin: 20px 0; 
+    color: #2c3e50; 
+}  
+
+.button{
+    background-color: #de1010;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+}
+
+.button:hover {  
+    background-color: #2bbcb2; 
+    transform: scale(1.05); 
+}  
+
+
+@keyframes pulse {  
+    0% {  
+        transform: scale(1);  
+    }  
+    50% {  
+        transform: scale(1.1); 
+    }  
+    100% {  
+        transform: scale(1);  
+    }  
+}  
+
+
+.button:focus {  
+    animation: pulse 1s infinite; 
+}  
