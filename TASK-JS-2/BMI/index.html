@@ -1,0 +1,33 @@
+<!-- BMI caluculator -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BMI Caluculator </title>
+ </head>
+ <body>
+    <h1>BMI calculator</h1>
+    <p>Calculate your BMI by entering your weight and height.</p>
+    <p>BMI is a measure of body fat based on height and weight that applies to adult men and women.</p>
+    <form id="bmi-form">
+        <label for="weight">Weight (kg):</label>
+        <input type="text" name="weight" id="weight" required><br>
+        <br>
+        <label for="height">Height (cm):</label>
+        <input type="text" name="height" id="height" required><br>
+        <br>
+    </form>
+    <button type="button" id="calculate" onclick="calculate()">Calculate</button>
+
+    <h2>Reslts </h2>
+    <p>Your BMI is :<span id="bmi"></span></p>
+    <p>This means you are :<span id="bmi-category"></span></p>
+
+    <script src="script.js"></script>
+
+
+    
+ </body>
+ </html>

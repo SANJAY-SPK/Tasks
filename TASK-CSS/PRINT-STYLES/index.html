@@ -4,38 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Print styles</title>
+    <title>Exzora Lifestyle</title>
 </head>
 <body>
 
-    <header>
-        <nav>
+    <!-- Header -->
+    <header id="header">
+        <nav id="nav-bar">
             <ul>
                 <li><h1>Exzora Lifestyle</h1></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a class="nav-link" href="#collections">Collections</a></li>
+                <li><a class="nav-link" href="#about">About Us</a></li>
+                <li><a class="nav-link" href="#contact">Contact Us</a></li>
             </ul>
-            
         </nav>
+        <img id="header-img" src="https://via.placeholder.com/300" alt="Exzora Logo">
     </header>
 
+    <!-- Main Content -->
     <main>
-        <section>
+        <section id="collections">
             <h2>Collections</h2>
             <p>Experience the new collections at Exzora.</p>
         </section>
         
-        <section>
+        <section id="about">
             <h3>About Us</h3>
             <p>At Exzora Lifestyle, we create stylish and elegant fashion designs tailored for every occasion.</p>
         </section>
 
+        <!-- Embedded Video -->
+        <section>
+            <h3>Watch Our Video</h3>
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact">
+            <h3>Subscribe to Our Newsletter</h3>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input id="email" type="email" name="email" placeholder="Enter your email" required>
+                <input id="submit" type="submit" value="Subscribe">
+            </form>
+        </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2020 Exzora Lifestyle</p>
+        <p>&copy; 2025 Exzora Lifestyle</p>
     </footer>
-    
+
 </body>
 </html>

@@ -17,7 +17,7 @@
 // Explanation: N is 30, k is 9. The factors of 30 are (1,2,3,5,6,10,15,30). There are only 8 factors. As k is more than the number of factors, the output is 1.
 
 
-package PROGRAMMING;
+package programs;
 import java.util.*;
 public class Solution
 {

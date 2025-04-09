@@ -21,7 +21,8 @@
 // •	  8
 // Explanation
 // Using zero-based index notation, the correct answer is a[4]-a[6]=10-2=8. There is a greater difference between 10 and 1 but that would imply selling before buying, and short selling is not allowed in this problem.
-package PROGRAMMING;
+
+package programs;
 import java.util.Scanner;
 public class Main
 {
@@ -31,18 +32,16 @@ public class Main
         {
             return 0;
         }
+        int max = Integer.MIN_VALUE;
         int maxloss = 0;
-        for(int i=0;i<n-1;i++)
+        for(int i=0;i<n;i++)
         {
-            for(int j =i+1;j<n;j++)
-            {
-                int loss = prices[i]-prices[j];
-                if(loss>maxloss)
-                {
-                    maxloss=loss;
-                }
-            }
-            
+            max = Math.max(max,prices[i]);
+            maxloss = Math.max(maxloss,max-prices[i]);
+        }
+        if(maxloss == 0)
+        {
+            return 0;
         }
         return maxloss;
     }

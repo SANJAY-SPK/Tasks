@@ -1,5 +1,9 @@
-.blog-posts{
+.post{
     display: grid;
+    border: #000000;
+    padding: 20px;
+    margin-top: auto;
+    border-end-start-radius:initial;
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
 
