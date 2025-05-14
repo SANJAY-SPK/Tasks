@@ -10,7 +10,9 @@ import Result from "./Components/Result";
 import Movie from "./Components/MovieRating";
 import UserStatus from "./Components/UserStatus";
 import Counter from "./Components/Counter";
-
+import { ThemeProvider } from "./Components/ThemeContext";
+import Home from "./Components/Home";
+import Manage from "./Components/TodoManage";
 function App() {
   return (
     <div>
@@ -26,8 +28,11 @@ function App() {
       <Result /> 
       <UserStatus name="Sanjay" isOnline={true} age={21}/>
       <UserStatus name="Prasadh" isOnline={false} age={21}/> */}
-      <Counter/>
-      <Footer/>
+      {/* <ThemeProvider>
+        <Home />
+      </ThemeProvider> */}
+      <Manage/>
+      
     </div>
   );
 }
